@@ -1,3 +1,4 @@
 <?php
-echo "Hello world!";
+$myVar = "Hello Dave";
+echo "<b>". $myVar."</b>";
 ?>
