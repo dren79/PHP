@@ -1,19 +1,10 @@
+<i>Below this, content will come from another file!</i>
+<br /><br /><br />
 <?php
-//while
-$i = 0;
-while($i < 5)
-{
-    echo $i. "<br>";
-    $i++;
-}
-echo "<br>". "<br>";
-
-//do while
-$j = 0;
-do{
-    echo $j."<br>";
-    $j++;
-}while($j <0)//this is false, but it still prints once :)
+$number1 = 20;
+include("includedfile.php");
 ?>
+<br /><br /><br />
+<i>We're back, after the included file has ended!</i>
 
 
