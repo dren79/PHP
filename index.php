@@ -1,24 +1,19 @@
 <?php
-$answer = 0;
-if(isset($_GET["answer"]))
-    $answer = $_GET["answer"];
-    
-switch($answer)
+//while
+$i = 0;
+while($i < 5)
 {
-    default:
-        echo "Which version of PHP are you using?<br /><br />";
-        echo "<a href=\"?answer=3\">3</a><br />";
-        echo "<a href=\"?answer=4\">4</a><br />";
-        echo "<a href=\"?answer=5\">5</a><br />";
-        break;
-    case 3:
-        echo "Ugh that's old, upgrade now!";
-        break;
-    case 4:
-        echo "Still on version 4? Give PHP 5 a try!";
-        break;
-    case 5:
-        echo "Good choice!";
-        break;
+    echo $i. "<br>";
+    $i++;
 }
+echo "<br>". "<br>";
+
+//do while
+$j = 0;
+do{
+    echo $j."<br>";
+    $j++;
+}while($j <0)//this is false, but it still prints once :)
 ?>
+
+
